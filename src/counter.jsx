@@ -6,10 +6,12 @@ export default class Counter extends Component { // When we export, other files 
   render() {
     return (
       <div>
-        <div>{ this.state.value }</div>  {/*When we click this button, we call the setState method. This will, in turn, update the state of our component.*/}
+        <div>{ this.state.value }</div>
         <button onClick={() => { this.setState({ value: this.state.value + 1 }) }}>Increment</button>
       </div>
     )
   }
 }
+// When we click this button, we call the setState method. This will, in turn, update the state of our component.
+
 // https://programmingwithmosh.com/react/react-tutorial-beginners/
